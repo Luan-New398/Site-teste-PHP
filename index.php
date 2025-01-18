@@ -41,15 +41,21 @@
     <div>
 <?php
 
-$capitulo = "Teste";
-$data = "a";
-$descricao = "asd";
+$capitulo = "Esse é o capitulo 6 no livro q tô lendo";
+$data = "Aqui deveria ter a data de hoje, mas tô comprequiça de pôr :D";
+$descricao = "Em resumo, eu estou aprendendo PHP";
 $variavel = "<p text-align: center;>Meu segundo código php!</p>";
 $Not_Octal = 0377;
 $Not_Hexa = 0xff;   //Comentario construtivo
 $dados[0] = "";
 $texto = "";
-$arquivos = array ("teste.fcn","nsei.inc","outrofcn.fcn");
+$arquivos = array ("nsei.inc","outrofcn.fcn","teste.fcn");
+
+for ($j=0;$j<sizeof($arquivos);$j++) {
+
+    include $arquivos[$j];
+
+}
 
 echo "<h2 text-align: center;>Meu primeiro código php!</h2>";
 echo $variavel;
@@ -73,12 +79,6 @@ for ($i = 0; $i<=9; $i++) //for com valor decimal
     echo "<p>$dados[$i] = $texto <br></p>";
 }
 */
-
-for ($j=0;$j<sizeof($arquivos);$j++) {
-
-    include $arquivos[$j];
-
-}
 
 //include "outrofcn.fcn";
 
