@@ -41,11 +41,15 @@
     <div>
 <?php
 
+$capitulo = "Teste";
+$data = "a";
+$descricao = "asd";
 $variavel = "<p text-align: center;>Meu segundo código php!</p>";
 $Not_Octal = 0377;
 $Not_Hexa = 0xff;   //Comentario construtivo
 $dados[0] = "";
 $texto = "";
+$arquivos = array ("teste.fcn","nsei.inc","outrofcn.fcn");
 
 echo "<h2 text-align: center;>Meu primeiro código php!</h2>";
 echo $variavel;
@@ -60,7 +64,7 @@ for ($i = 0; $i<=9; $i++) //for com valor decimal
 }
 */
 
-include "teste.fcn"; //Inclui uma função externa! :D
+//include "teste.fcn"; //Inclui uma função externa! :D
 
 /*for ($i = 0x00; $i<=0x10; $i++) //for mas com valor de base hexadecimal 
 {
@@ -69,6 +73,14 @@ include "teste.fcn"; //Inclui uma função externa! :D
     echo "<p>$dados[$i] = $texto <br></p>";
 }
 */
+
+for ($j=0;$j<sizeof($arquivos);$j++) {
+
+    include $arquivos[$j];
+
+}
+
+//include "outrofcn.fcn";
 
 ?>
     </div>

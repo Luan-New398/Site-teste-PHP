@@ -1,0 +1,11 @@
+<?php
+
+$Nomes = array ("João","Paulo","Silvio","Roberto","Carlos","Pedro","Emerson");
+
+for ($n=0;$n<sizeof($Nomes);$n++) {
+
+echo "<p>O nome do meliante é $Nomes[$n] <br></p>";
+
+}
+
+?>
