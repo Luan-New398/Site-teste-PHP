@@ -1,0 +1,10 @@
+<?php
+
+for ($i = 0x00; $i<=0x10; $i++) //for mas com valor de base hexadecimal 
+{
+    $dados[$i] = $i;
+    $i > 1 ?  $texto = "unidades!" : ($i == 0 ? $texto = "nenhuma unidade!" : $texto = "unidade!");
+    echo "<p>$dados[$i] = $texto <br></p>";
+}
+
+?>
